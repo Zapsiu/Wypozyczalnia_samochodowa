@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\views\\customerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\views\\customerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\views\\carview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\views\\carview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\data\\rentaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\data\\rentaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\views\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\views\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\migrations\\20241111155247_initialstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\migrations\\20241111155247_initialstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|c:\\users\\barte\\source\\repos\\wypozyczalnia_samochodowa\\wypozyczalnia_samochodowa\\views\\reservationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2678FD8C-FEC8-4E02-A1AB-F3DEE961CDCE}|Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa.csproj|solutionrelative:wypozyczalnia_samochodowa\\views\\reservationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Models\\Customer.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:17:03.529Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAA5wEsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:18:05.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerView.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\CustomerView.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Views\\CustomerView.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\CustomerView.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Views\\CustomerView.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwFkAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:21:26.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarView.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\CarView.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Views\\CarView.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\CarView.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Views\\CarView.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:21:14.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Models\\Car.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:15:53.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RentalDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Data\\RentalDbContext.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Data\\RentalDbContext.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Data\\RentalDbContext.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Data\\RentalDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:33:14.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Controllers\\CarController.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Controllers\\CarController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:34:47.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAowJ0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:35:12.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Program.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Program.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Program.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Program.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwEQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:09:08.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\Menu.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Views\\Menu.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\Menu.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Views\\Menu.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwDgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:17:39.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241111155247_InitialStructure.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Migrations\\20241111155247_InitialStructure.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Migrations\\20241111155247_InitialStructure.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Migrations\\20241111155247_InitialStructure.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Migrations\\20241111155247_InitialStructure.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T07:37:24.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Models\\Reservation.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Models\\Reservation.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Models\\Reservation.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:17:20.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReservationView.cs",
+              "DocumentMoniker": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\ReservationView.cs",
+              "RelativeDocumentMoniker": "Wypozyczalnia_samochodowa\\Views\\ReservationView.cs",
+              "ToolTip": "C:\\Users\\barte\\source\\repos\\Wypozyczalnia_samochodowa\\Wypozyczalnia_samochodowa\\Views\\ReservationView.cs",
+              "RelativeToolTip": "Wypozyczalnia_samochodowa\\Views\\ReservationView.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:21:42.171Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
