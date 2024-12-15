@@ -27,7 +27,14 @@ namespace Wypozyczalnia_samochodowa.Controllers
                 return;
             }
 
-            var selectedCar = _reservationView.SelectCarToReserve(availableCars);
+            var filteredCars = _reservationView.FilterAndSortCars(availableCars);
+            if (!filteredCars.Any())
+            {
+                _reservationView.ShowMessage("No cars match the selected filters.", "yellow");
+                return;
+            }
+
+            var selectedCar = _reservationView.SelectCarToReserve(filteredCars);
             if (selectedCar == null)
             {
                 _reservationView.ShowMessage("Reservation canceled.", "grey");

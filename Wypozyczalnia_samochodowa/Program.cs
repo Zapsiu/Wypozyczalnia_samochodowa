@@ -31,7 +31,7 @@ namespace Wypozyczalnia_samochodowa
                 switch (choice)
                 {
                     case 1:
-                        carController.ShowAvailableCars();
+                        carController.HandleListCars();
                         break;
                     case 2:
                         reservationController.ReserveCarForUser(currentUser);

@@ -2,6 +2,7 @@
 using System.Linq;
 using Spectre.Console;
 using Wypozyczalnia_samochodowa.Data;
+using Wypozyczalnia_samochodowa.Models;
 using Wypozyczalnia_samochodowa.Views;
 
 namespace Wypozyczalnia_samochodowa.Controllers
@@ -14,51 +15,75 @@ namespace Wypozyczalnia_samochodowa.Controllers
         public CarController(RentalDbContext context)
         {
             _context = context;
-            _carView = new CarView(this);
+            _carView = new CarView();
         }
 
         public void ManageCars()
         {
             while (true)
             {
-                var selectedOption = _carView.ShowManageCarsMenu();
+                var action = _carView.ShowManageCarsMenu();
 
-                switch (selectedOption)
+                switch (action)
                 {
                     case "List Cars":
-                        ShowAvailableCars();
-                        PauseBeforeReturning();
+                        HandleListCars();
+                        PauseAndClear();
                         break;
+
                     case "Add Car":
                         AddCar();
-                        PauseBeforeReturning();
+                        PauseAndClear();
                         break;
+
                     case "Update Car":
                         UpdateCar();
-                        PauseBeforeReturning();
+                        PauseAndClear();
                         break;
+
                     case "Delete Car":
                         DeleteCar();
-                        PauseBeforeReturning();
+                        PauseAndClear();
                         break;
+
                     case "Return to Main Menu":
                         return;
+
+                    default:
+                        _carView.ShowErrorMessage("Invalid option. Please try again.");
+                        break;
                 }
             }
         }
+        public void PauseAndClear() {
+            AnsiConsole.MarkupLine("[grey]Press any key to return...[/]");
+            Console.ReadKey();
+            AnsiConsole.Clear();
+        }
 
-        public void ShowAvailableCars()
+        public void HandleListCars()
         {
-            var availableCars = _context.Cars.Where(c => c.Dostepnosc).ToList();
-
-            if (!availableCars.Any())
+            var choice = _carView.AskListAllOrFiltered();
+            if (choice == "All")
             {
-                _carView.ShowErrorMessage("No cars available.");
+                DisplayAvailableCars();
             }
             else
             {
-                _carView.DisplayAvailableCars(availableCars);
+                DisplayAvailableCarsWithFilters();
             }
+        }
+
+        public void DisplayAvailableCars()
+        {
+            var cars = _context.Cars.ToList();
+            _carView.DisplayAvailableCars(cars);
+        }
+
+        public void DisplayAvailableCarsWithFilters()
+        {
+            var cars = _context.Cars.Where(c => c.Dostepnosc).ToList();
+            _carView.DisplayAvailableCarsWithFilters(cars);
         }
 
         public void AddCar()
@@ -110,11 +135,6 @@ namespace Wypozyczalnia_samochodowa.Controllers
             {
                 _carView.ShowWarningMessage("Delete action canceled.");
             }
-        }
-        public void PauseBeforeReturning()
-        {
-            AnsiConsole.MarkupLine("[grey]Press any key to return to the menu...[/]");
-            Console.ReadKey(true);
         }
     }
 }
