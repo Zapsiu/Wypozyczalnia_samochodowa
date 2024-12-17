@@ -11,9 +11,11 @@ namespace Wypozyczalnia_samochodowa.Models
         public bool Dostepnosc { get; set; }
         public int Cena { get; set; }
         public string NumerRejestracyjny { get; set; }
+        public string DisplayCarDetails => $"{Marka} {Model}, Seats: {Siedzenia}, Available: {Dostepnosc}, Price: {Cena} zł";
+
         public override string ToString()
         {
-            return $"{Marka} {Model}, Seats: {Siedzenia}, Available: {Dostepnosc}, Price: {Cena} zł";
+            return DisplayCarDetails;
         }
     }
 }

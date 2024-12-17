@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using Spectre.Console;
 using Wypozyczalnia_samochodowa.Data;
 using Wypozyczalnia_samochodowa.Models;
@@ -155,6 +156,11 @@ namespace Wypozyczalnia_samochodowa.Controllers
         {
             AnsiConsole.MarkupLine("[grey]Press any key to return to the menu...[/]");
             Console.ReadKey(true);
+        }
+
+        public List<Customer> GetAllUsers()
+        {
+            return _context.Customers.ToList();
         }
     }
 }

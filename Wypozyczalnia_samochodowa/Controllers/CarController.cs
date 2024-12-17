@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using Spectre.Console;
 using Wypozyczalnia_samochodowa.Data;
 using Wypozyczalnia_samochodowa.Models;
@@ -136,6 +137,10 @@ namespace Wypozyczalnia_samochodowa.Controllers
             {
                 _carView.ShowWarningMessage("Delete action canceled.");
             }
+        }
+        public List<Car> GetAllCars()
+        {
+            return _context.Cars.ToList();
         }
     }
 }
