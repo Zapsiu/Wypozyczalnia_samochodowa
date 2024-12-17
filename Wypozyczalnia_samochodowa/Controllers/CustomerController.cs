@@ -85,7 +85,7 @@ namespace Wypozyczalnia_samochodowa.Controllers
             }
         }
 
-        private void DisplayUsers()
+        public List<Customer> DisplayUsers()
         {
             var users = _context.Customers.ToList();
 
@@ -97,9 +97,11 @@ namespace Wypozyczalnia_samochodowa.Controllers
             {
                 _customerView.DisplayUsers(users);
             }
+
+            return users;
         }
 
-        private void EditUser()
+        public void EditUser()
         {
             int userId = _customerView.GetUserId("edit");
             var user = _context.Customers.SingleOrDefault(u => u.Id == userId);
@@ -117,7 +119,7 @@ namespace Wypozyczalnia_samochodowa.Controllers
             _customerView.ShowSuccessMessage("User updated successfully.");
         }
 
-        private void DeleteUser()
+        public void DeleteUser()
         {
             int userId = _customerView.GetUserId("delete");
             var user = _context.Customers.SingleOrDefault(u => u.Id == userId);
@@ -149,7 +151,7 @@ namespace Wypozyczalnia_samochodowa.Controllers
             _customerView.ShowSuccessMessage("Profile updated successfully.");
         }
 
-        private void PauseBeforeReturning()
+        public void PauseBeforeReturning()
         {
             AnsiConsole.MarkupLine("[grey]Press any key to return to the menu...[/]");
             Console.ReadKey(true);

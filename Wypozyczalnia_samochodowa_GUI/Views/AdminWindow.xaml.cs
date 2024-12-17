@@ -1,65 +1,67 @@
 ﻿using System.Windows;
 using Wypozyczalnia_samochodowa.Controllers;
-using Wypozyczalnia_samochodowa.Data;
-using Wypozyczalnia_samochodowa.Models;
 
 namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class AdminWindow : Window
     {
-        private readonly CarController _carController;
-        private readonly CustomerController _customerController;
-        private readonly ReservationController _reservationController;
+        private CarController _carController;
+        private CustomerController _customerController;
+        private ReservationController _reservationController;
 
-        public AdminWindow()
+        public AdminWindow(CarController carController, CustomerController customerController, ReservationController reservationController)
         {
             InitializeComponent();
-
-            // Inicjalizacja kontrolerów i kontekstu bazy danych
-            var dbContext = new RentalDbContext();
-            _carController = new CarController(dbContext);
-            _customerController = new CustomerController(dbContext);
-            _reservationController = new ReservationController(dbContext);
+            _carController = carController;
+            _customerController = customerController;
+            _reservationController = reservationController;
         }
 
-        private void ListCarsButton_Click(object sender, RoutedEventArgs e)
+        private void OnListCarsClick(object sender, RoutedEventArgs e)
         {
-            _carController.HandleListCars();
+            var carListWindow = new CarListWindow(_carController);
+            carListWindow.ShowDialog();
         }
 
-        private void MakeReservationButton_Click(object sender, RoutedEventArgs e)
+        private void OnMakeReservationClick(object sender, RoutedEventArgs e)
         {
-            _reservationController.ReserveCarForUser(null); // Null lub zalogowany użytkownik
+            var reservationWindow = new ReservationWindow(_reservationController, _customerController);
+            reservationWindow.ShowDialog();
         }
 
-        private void UpdateProfileButton_Click(object sender, RoutedEventArgs e)
+        private void OnUpdateProfileClick(object sender, RoutedEventArgs e)
         {
-            _customerController.UpdateProfile(null); // Null lub zalogowany użytkownik
+            MessageBox.Show("Admin profile update not implemented.");
         }
 
-        private void ShowReservationsButton_Click(object sender, RoutedEventArgs e)
+        private void OnShowReservationsClick(object sender, RoutedEventArgs e)
         {
-            _reservationController.DisplayReservations();
+            var reservationListWindow = new AdminReservationListWindow(_reservationController);
+            reservationListWindow.ShowDialog();
         }
 
-        private void DeleteReservationButton_Click(object sender, RoutedEventArgs e)
+        private void OnDeleteReservationClick(object sender, RoutedEventArgs e)
         {
             _reservationController.DeleteReservation();
+            MessageBox.Show("Reservation deleted successfully.");
         }
 
-        private void ManageCustomersButton_Click(object sender, RoutedEventArgs e)
+        private void OnManageCustomersClick(object sender, RoutedEventArgs e)
         {
-            _customerController.ManageUsers();
+            var userListWindow = new AdminUserListWindow(_customerController);
+            userListWindow.ShowDialog();
         }
 
-        private void ManageCarsButton_Click(object sender, RoutedEventArgs e)
+        private void OnManageCarsClick(object sender, RoutedEventArgs e)
         {
-            _carController.ManageCars();
+            var carListWindow = new AddCarWindow(_carController);
+            carListWindow.ShowDialog();
         }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        private void OnExitClick(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
+
     }
 }

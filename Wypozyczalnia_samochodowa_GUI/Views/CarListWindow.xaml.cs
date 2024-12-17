@@ -1,29 +1,28 @@
 ﻿using System.Windows;
 using Wypozyczalnia_samochodowa.Controllers;
-using Wypozyczalnia_samochodowa.Data;
 
 namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class CarListWindow : Window
     {
-        private readonly CarController _carController;
+        private CarController _carController;
 
-        public CarListWindow()
+        public CarListWindow(CarController carController)
         {
             InitializeComponent();
-            _carController = new CarController(new RentalDbContext());
+            _carController = carController;
             LoadCars();
         }
 
         private void LoadCars()
         {
-            var cars = _carController.GetAvailableCars();
-            CarListView.ItemsSource = cars;
+            var cars = _carController.DisplayAvailableCars();
+            CarListBox.ItemsSource = cars;
         }
 
-        private void Close_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

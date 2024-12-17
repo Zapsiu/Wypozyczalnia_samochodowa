@@ -5,10 +5,17 @@
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#E3F2FD">
     <Grid>
         <StackPanel Margin="20">
+            <!-- Nagłówek -->
             <TextBlock Text="Reservation List" FontSize="20" FontWeight="Bold"
                        HorizontalAlignment="Center" Margin="0,10"/>
-            <ListBox Name="ReservationListBox" Margin="0,10"/>
-            <Button Content="Back" Height="30" Background="Red" Foreground="White"/>
+
+            <!-- Lista rezerwacji -->
+            <ListBox Name="ReservationListBox" Margin="0,10" 
+                     FontSize="14" BorderThickness="1" BorderBrush="LightGray"/>
+
+            <!-- Przycisk powrotu -->
+            <Button Content="Back" Height="30" Background="Red" Foreground="White" 
+                    FontWeight="SemiBold" Click="Back_Click"/>
         </StackPanel>
     </Grid>
 </Window>

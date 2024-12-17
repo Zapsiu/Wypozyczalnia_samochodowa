@@ -6,22 +6,24 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class UserProfileWindow : Window
     {
-        private readonly CustomerController _customerController;
-        private readonly Customer _currentUser;
+        private CustomerController _customerController;
+        private Customer _currentUser;
 
         public UserProfileWindow(CustomerController customerController, Customer currentUser)
         {
             InitializeComponent();
             _customerController = customerController;
-            _currentUser = currentUser; // Przekazanie obiektu bieżącego użytkownika
+            _currentUser = currentUser;
         }
 
-        private void UpdateProfile_Click(object sender, RoutedEventArgs e)
+        private void SaveProfile_Click(object sender, RoutedEventArgs e)
         {
-            // Wywołanie metody UpdateProfile z przekazanym użytkownikiem
             _customerController.UpdateProfile(_currentUser);
+            MessageBox.Show("Profile updated successfully!");
+        }
 
-            MessageBox.Show("Profil zaktualizowany!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

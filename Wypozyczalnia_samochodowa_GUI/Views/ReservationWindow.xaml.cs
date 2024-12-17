@@ -1,27 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Wypozyczalnia_samochodowa.Controllers;
 
 namespace Wypozyczalnia_samochodowa_GUI.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy ReservationWindow.xaml
-    /// </summary>
     public partial class ReservationWindow : Window
     {
-        public ReservationWindow()
+        private ReservationController _reservationController;
+        private CustomerController _customerController;
+
+        public ReservationWindow(ReservationController reservationController, CustomerController customerController)
         {
             InitializeComponent();
+            _reservationController = reservationController;
+            _customerController = customerController;
+            LoadCars();
+        }
+
+        private void LoadCars()
+        {
+            var cars = _reservationController.GetAllReservations(); // Przykład metody
+            CarComboBox.ItemsSource = cars;
+        }
+
+        private void OnReserveClick(object sender, RoutedEventArgs e)
+        {
+            var selectedCar = CarComboBox.SelectedItem;
+            var startDate = StartDatePicker.SelectedDate;
+            var endDate = EndDatePicker.SelectedDate;
+
+            if (selectedCar == null || startDate == null || endDate == null)
+            {
+                MessageBox.Show("Please fill in all fields to proceed.");
+                return;
+            }
+
+            _reservationController.ReserveCarForUser(selectedCar, startDate.Value, _customerController);
+            MessageBox.Show("Reservation successful!");
+            this.Close();
+        }
+
+        private void OnBackClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -9,12 +9,15 @@
                        HorizontalAlignment="Center" Margin="0,10"/>
             <TextBlock Text="Car ID:" Margin="0,5"/>
             <TextBox Name="CarIdTextBox" Margin="0,5"/>
+
             <TextBlock Text="New Brand:" Margin="0,5"/>
             <TextBox Name="BrandTextBox" Margin="0,5"/>
+
             <TextBlock Text="New Model:" Margin="0,5"/>
             <TextBox Name="ModelTextBox" Margin="0,5"/>
-            <Button Content="Update" Height="40" Margin="0,10"/>
-            <Button Content="Back" Height="30" Background="Red" Foreground="White"/>
+
+            <Button Content="Update" Height="40" Margin="0,10" Click="UpdateCar_Click"/>
+            <Button Content="Back" Height="30" Background="Red" Foreground="White" Click="Back_Click"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -6,29 +6,24 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class UserReservationWindow : Window
     {
-        private readonly Customer _user;
-        private readonly CarController _carController;
-        private readonly ReservationController _reservationController;
+        private ReservationController _reservationController;
+        private Customer _currentUser;
 
-        public UserReservationWindow(Customer user, CarController carController, ReservationController reservationController)
+        public UserReservationWindow(ReservationController reservationController, Customer currentUser)
         {
             InitializeComponent();
-            _user = user;
-            _carController = carController;
             _reservationController = reservationController;
+            _currentUser = currentUser;
         }
 
-        private void ReserveButton_Click(object sender, RoutedEventArgs e)
+        private void Reserve_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(CarIdTextBox.Text, out int carId))
-            {
-                var result = _reservationController.ReserveCarForUserById(_user, carId);
-                MessageBox.Show(result ? "Rezerwacja zakończona sukcesem!" : "Nie udało się zarezerwować samochodu.");
-            }
-            else
-            {
-                MessageBox.Show("Podaj poprawne ID samochodu.");
-            }
+            //_reservationController.ReserveCarForUser(_currentUser);
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

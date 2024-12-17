@@ -1,12 +1,11 @@
 ﻿using System.Windows;
 using Wypozyczalnia_samochodowa.Controllers;
-using Wypozyczalnia_samochodowa.Models;
 
 namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class AddCarWindow : Window
     {
-        private readonly CarController _carController;
+        private CarController _carController;
 
         public AddCarWindow(CarController carController)
         {
@@ -14,27 +13,17 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
             _carController = carController;
         }
 
-        private void AddCar_Click(object sender, RoutedEventArgs e)
+        private void AddCarButton_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(PriceTextBox.Text, out int price))
-            {
-                var car = new Car
-                {
-                    Marka = BrandTextBox.Text,
-                    Model = ModelTextBox.Text,
-                    NumerRejestracyjny = RegistrationNumberTextBox.Text,
-                    Cena = price,
-                    Dostepnosc = true
-                };
+            // Implementation for adding a car
+            _carController.AddCar();
+            MessageBox.Show("Car added successfully!");
+        }
 
-                _carController.AddCar(car);
-                MessageBox.Show("Samochód został dodany!");
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Podaj poprawną cenę!");
-            }
+        // Event handler for the "Back" button
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close(); // Closes the current window
         }
     }
 }

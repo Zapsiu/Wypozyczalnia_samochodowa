@@ -1,29 +1,29 @@
 ﻿using System.Windows;
 using Wypozyczalnia_samochodowa.Controllers;
-using Wypozyczalnia_samochodowa.Data;
 
 namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class AdminReservationListWindow : Window
     {
-        private readonly ReservationController _reservationController;
+        private ReservationController _reservationController;
 
-        public AdminReservationListWindow()
+        public AdminReservationListWindow(ReservationController reservationController)
         {
             InitializeComponent();
-            _reservationController = new ReservationController(new RentalDbContext());
+            _reservationController = reservationController;
             LoadReservations();
         }
 
         private void LoadReservations()
         {
             var reservations = _reservationController.GetAllReservations();
-            ReservationListView.ItemsSource = reservations;
+            ReservationListBox.ItemsSource = reservations;
         }
 
-        private void Close_Click(object sender, RoutedEventArgs e)
+        // Event handler for the "Back" button
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            this.Close(); // Closes the window
         }
     }
 }

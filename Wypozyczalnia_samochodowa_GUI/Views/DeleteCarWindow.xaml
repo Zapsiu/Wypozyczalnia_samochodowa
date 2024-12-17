@@ -5,12 +5,21 @@
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#E3F2FD">
     <Grid>
         <StackPanel Margin="20">
+            <!-- Nagłówek -->
             <TextBlock Text="Delete Car" FontSize="20" FontWeight="Bold"
                        HorizontalAlignment="Center" Margin="0,10"/>
+
+            <!-- Pole na ID pojazdu -->
             <TextBlock Text="Car ID:" Margin="0,5"/>
             <TextBox Name="CarIdTextBox" Margin="0,5"/>
-            <Button Content="Delete Car" Height="40" Margin="0,10"/>
-            <Button Content="Back" Height="30" Background="Red" Foreground="White"/>
+
+            <!-- Przycisk usunięcia -->
+            <Button Content="Delete Car" Height="40" Margin="0,10" 
+                    Click="DeleteCar_Click" />
+
+            <!-- Przycisk powrotu -->
+            <Button Content="Back" Height="30" Background="Red" Foreground="White" 
+                    Click="Back_Click" />
         </StackPanel>
     </Grid>
 </Window>

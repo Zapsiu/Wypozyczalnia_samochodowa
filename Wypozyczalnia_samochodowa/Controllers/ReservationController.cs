@@ -18,7 +18,7 @@ namespace Wypozyczalnia_samochodowa.Controllers
             _reservationView = new ReservationView(this);
         }
 
-        public void ReserveCarForUser(Customer currentUser)
+        public void ReserveCarForUser(object selectedCar, DateTime value, Customer currentUser)
         {
             var availableCars = _context.Cars.Where(c => c.Dostepnosc).ToList();
             if (!availableCars.Any())
@@ -34,8 +34,7 @@ namespace Wypozyczalnia_samochodowa.Controllers
                 return;
             }
 
-            var selectedCar = _reservationView.SelectCarToReserve(filteredCars);
-            if (selectedCar == null)
+            if (_reservationView.SelectCarToReserve(filteredCars) == null)
             {
                 _reservationView.ShowMessage("Reservation canceled.", "grey");
                 return;
@@ -46,13 +45,13 @@ namespace Wypozyczalnia_samochodowa.Controllers
 
             var reservation = new Reservation
             {
-                Car = selectedCar,
+                Car = _reservationView.SelectCarToReserve(filteredCars),
                 Customer = currentUser,
                 Poczatek = reservationDates.Value.StartDate,
                 Koniec = reservationDates.Value.EndDate
             };
 
-            selectedCar.Dostepnosc = false;
+            _reservationView.SelectCarToReserve(filteredCars).Dostepnosc = false;
             _context.Reservations.Add(reservation);
             _context.SaveChanges();
 
@@ -106,6 +105,18 @@ namespace Wypozyczalnia_samochodowa.Controllers
             {
                 _reservationView.ShowMessage("Delete action canceled.", "yellow");
             }
+        }
+        public List<Reservation> GetAllReservations()
+        {
+            return _context.Reservations
+                           .Include(r => r.Car)
+                           .Include(r => r.Customer)
+                           .ToList();
+        }
+
+        public void ReserveCarForUser(object selectedCar, DateTime value, CustomerController customerController)
+        {
+            throw new NotImplementedException();
         }
     }
 }

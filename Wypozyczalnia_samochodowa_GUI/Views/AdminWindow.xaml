@@ -6,7 +6,7 @@
 
     <Grid>
         <Border Background="White" CornerRadius="15" BorderThickness="2" BorderBrush="LightSteelBlue"
-        Padding="10" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                Padding="10" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
 
                 <!-- Nagłówek -->
@@ -15,25 +15,25 @@
                            TextDecorations="Underline"/>
 
                 <!-- Opcje dla administratora -->
-                <Button Content="List available cars" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
-                <Button Content="Make a reservation" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
-                <Button Content="Update profile" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
-                <Button Content="Show reservations" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
-                <Button Content="Delete reservation" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
-                <Button Content="Manage customers" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
-                <Button Content="Manage cars" Height="40" Margin="0,5" Background="#B0C4DE" 
-                        Foreground="White" FontWeight="SemiBold" Cursor="Hand"/>
+                <Button Content="List Available Cars" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnListCarsClick"/>
+                <Button Content="Make a Reservation" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnMakeReservationClick"/>
+                <Button Content="Update Profile" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnUpdateProfileClick"/>
+                <Button Content="Show Reservations" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnShowReservationsClick"/>
+                <Button Content="Delete Reservation" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnDeleteReservationClick"/>
+                <Button Content="Manage Customers" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnManageCustomersClick"/>
+                <Button Content="Manage Cars" Height="40" Margin="0,5" Background="#B0C4DE" 
+                        Foreground="White" FontWeight="SemiBold" Cursor="Hand" Click="OnManageCarsClick"/>
 
                 <!-- Przycisk Exit -->
                 <Button Content="Exit" Height="40" Margin="0,20,0,0" Background="Red" 
                         Foreground="White" FontWeight="Bold" Cursor="Hand"
-                        Click="ExitButton_Click"/>
+                        Click="OnExitClick"/>
             </StackPanel>
         </Border>
     </Grid>

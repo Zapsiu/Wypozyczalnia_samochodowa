@@ -5,7 +5,7 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class UpdateCarWindow : Window
     {
-        private readonly CarController _carController;
+        private CarController _carController;
 
         public UpdateCarWindow(CarController carController)
         {
@@ -15,16 +15,33 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
 
         private void UpdateCar_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(CarIdTextBox.Text, out int carId))
+            // Pobranie danych z pól tekstowych
+            string carIdText = CarIdTextBox.Text;
+            string newBrand = BrandTextBox.Text;
+            string newModel = ModelTextBox.Text;
+
+            // Walidacja danych
+            if (string.IsNullOrEmpty(carIdText) || string.IsNullOrEmpty(newBrand) || string.IsNullOrEmpty(newModel))
             {
-                _carController.UpdateCar();
-                MessageBox.Show("Samochód zaktualizowany!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
-                this.Close();
+                MessageBox.Show("Please fill in all fields.");
+                return;
             }
-            else
+
+            if (!int.TryParse(carIdText, out int carId))
             {
-                MessageBox.Show("Wprowadź poprawne ID samochodu!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Invalid Car ID. Please enter a number.");
+                return;
             }
+
+            // Aktualizacja samochodu za pomocą kontrolera
+            _carController.UpdateCar();//carId, newBrand, newModel);
+            MessageBox.Show("Car updated successfully!");
+            this.Close();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close(); // Zamknięcie bieżącego okna
         }
     }
 }

@@ -9,8 +9,8 @@ namespace Wypozyczalnia_samochodowa.Controllers
 {
     public class CarController
     {
-        private readonly RentalDbContext _context;
-        private readonly CarView _carView;
+        private RentalDbContext _context;
+        private CarView _carView;
 
         public CarController(RentalDbContext context)
         {
@@ -74,10 +74,11 @@ namespace Wypozyczalnia_samochodowa.Controllers
             }
         }
 
-        public void DisplayAvailableCars()
+        public List<Car> DisplayAvailableCars()
         {
             var cars = _context.Cars.ToList();
             _carView.DisplayAvailableCars(cars);
+            return cars;
         }
 
         public void DisplayAvailableCarsWithFilters()

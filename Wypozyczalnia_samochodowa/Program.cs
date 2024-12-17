@@ -32,7 +32,7 @@ namespace Wypozyczalnia_samochodowa
                 try
                 {
                     // Ścieżka do pliku .exe interfejsu WPF
-                    Process.Start(@"C:\Users\barte\source\repos\Wypozyczalnia_samochodowa\Wypozyczalnia_samochodowa_GUI\bin\Debug\net8.0-windows\Wypozyczalnia_samochodowa_GUI.exe");
+                    Process.Start(@"C:\Users\barte\Downloads\Wypozyczalnia_samochodowa_yey\Wypozyczalnia_samochodowa_yey\Wypozyczalnia_samochodowa — kopia (2) — kopia\Wypozyczalnia_samochodowa_GUI\bin\Debug\net8.0-windows\Wypozyczalnia_samochodowa_GUI.exe");
                 }
                 catch (Exception ex)
                 {
@@ -74,7 +74,7 @@ namespace Wypozyczalnia_samochodowa
                         carController.HandleListCars();
                         break;
                     case 2:
-                        reservationController.ReserveCarForUser(currentUser);
+                        //reservationController.ReserveCarForUser(currentUser);
                         break;
                     case 3:
                         customerController.UpdateProfile(currentUser);

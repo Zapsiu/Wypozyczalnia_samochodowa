@@ -9,12 +9,14 @@
                        HorizontalAlignment="Center" Margin="0,10"/>
             <TextBlock Text="Name:" Margin="0,5"/>
             <TextBox Name="NameTextBox" Margin="0,5"/>
+            <TextBlock Text="Surname:" Margin="0,5"/>
+            <TextBox Name="SurnameTextBox" Margin="0,5"/>
             <TextBlock Text="Username:" Margin="0,5"/>
             <TextBox Name="UsernameTextBox" Margin="0,5"/>
             <TextBlock Text="Password:" Margin="0,5"/>
             <PasswordBox Name="PasswordBox" Margin="0,5"/>
-            <Button Content="Save Changes" Height="40" Margin="0,10"/>
-            <Button Content="Back" Height="30" Background="Red" Foreground="White"/>
+            <Button Content="Save Changes" Height="40" Margin="0,10" Click="SaveProfile_Click"/>
+            <Button Content="Back" Height="30" Background="Red" Foreground="White" Click="Back_Click"/>
         </StackPanel>
     </Grid>
 </Window>

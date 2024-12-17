@@ -5,7 +5,7 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
 {
     public partial class DeleteCarWindow : Window
     {
-        private readonly CarController _carController;
+        private CarController _carController;
 
         public DeleteCarWindow(CarController carController)
         {
@@ -15,17 +15,12 @@ namespace Wypozyczalnia_samochodowa_GUI.Views
 
         private void DeleteCar_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(CarIdTextBox.Text, out int carId))
-            {
-                // Użycie istniejącej metody DeleteCar
-                _carController.DeleteCar();
-                MessageBox.Show("Samochód został usunięty!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Wprowadź poprawny ID samochodu!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            _carController.DeleteCar();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
